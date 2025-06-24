@@ -1,0 +1,31 @@
+.container{
+    width:600px;
+    height:100px;
+    border:2px solid;
+    display:flex;
+}
+.box{
+    width:100px;
+    height:100px;
+    border:2px solid;
+}
+/*For odd rows*/
+.container:nth-child(odd) .box:nth-child(odd){
+    background-color:brown;
+}
+.container:nth-child(odd) .box:nth-child(even){
+    background-color: burlywood;
+}
+/*for even rows*/
+.container:nth-child(even) .box:nth-child(odd){
+    background-color: burlywood;
+}
+.container:nth-child(even) .box:nth-child(even){
+    background-color:brown;
+}
+.box img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+
+}
